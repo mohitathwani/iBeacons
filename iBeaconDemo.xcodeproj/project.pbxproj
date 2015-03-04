@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		06B7C82E1AA777C700333AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C82D1AA777C700333AAE /* main.m */; };
 		06B7C8311AA777C700333AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C8301AA777C700333AAE /* AppDelegate.m */; };
-		06B7C8341AA777C700333AAE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C8331AA777C700333AAE /* FirstViewController.m */; };
-		06B7C8371AA777C700333AAE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C8361AA777C700333AAE /* SecondViewController.m */; };
 		06B7C83A1AA777C700333AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C8381AA777C700333AAE /* Main.storyboard */; };
 		06B7C83C1AA777C700333AAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C83B1AA777C700333AAE /* Images.xcassets */; };
 		06B7C83F1AA777C700333AAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C83D1AA777C700333AAE /* LaunchScreen.xib */; };
 		06B7C84B1AA777C700333AAE /* iBeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C84A1AA777C700333AAE /* iBeaconDemoTests.m */; };
+		06B7C8591AA7781C00333AAE /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C8581AA7781C00333AAE /* BeaconViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +32,15 @@
 		06B7C82D1AA777C700333AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06B7C82F1AA777C700333AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B7C8301AA777C700333AAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		06B7C8321AA777C700333AAE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		06B7C8331AA777C700333AAE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		06B7C8351AA777C700333AAE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		06B7C8361AA777C700333AAE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		06B7C8391AA777C700333AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06B7C83B1AA777C700333AAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		06B7C83E1AA777C700333AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		06B7C8441AA777C700333AAE /* iBeaconDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B7C8491AA777C700333AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06B7C84A1AA777C700333AAE /* iBeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconDemoTests.m; sourceTree = "<group>"; };
+		06B7C8571AA7781C00333AAE /* BeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
+		06B7C8581AA7781C00333AAE /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
+		06B7C85B1AA77EEA00333AAE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +84,13 @@
 			children = (
 				06B7C82F1AA777C700333AAE /* AppDelegate.h */,
 				06B7C8301AA777C700333AAE /* AppDelegate.m */,
-				06B7C8321AA777C700333AAE /* FirstViewController.h */,
-				06B7C8331AA777C700333AAE /* FirstViewController.m */,
-				06B7C8351AA777C700333AAE /* SecondViewController.h */,
-				06B7C8361AA777C700333AAE /* SecondViewController.m */,
 				06B7C8381AA777C700333AAE /* Main.storyboard */,
 				06B7C83B1AA777C700333AAE /* Images.xcassets */,
 				06B7C83D1AA777C700333AAE /* LaunchScreen.xib */,
 				06B7C82B1AA777C700333AAE /* Supporting Files */,
+				06B7C8571AA7781C00333AAE /* BeaconViewController.h */,
+				06B7C8581AA7781C00333AAE /* BeaconViewController.m */,
+				06B7C85B1AA77EEA00333AAE /* Constants.h */,
 			);
 			path = iBeaconDemo;
 			sourceTree = "<group>";
@@ -224,10 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B7C8371AA777C700333AAE /* SecondViewController.m in Sources */,
 				06B7C8311AA777C700333AAE /* AppDelegate.m in Sources */,
-				06B7C8341AA777C700333AAE /* FirstViewController.m in Sources */,
 				06B7C82E1AA777C700333AAE /* main.m in Sources */,
+				06B7C8591AA7781C00333AAE /* BeaconViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
