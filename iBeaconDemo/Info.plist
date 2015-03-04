@@ -46,5 +46,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This key is necessary since iOS 8</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This key is necessary since iOS 8</string>
 </dict>
 </plist>

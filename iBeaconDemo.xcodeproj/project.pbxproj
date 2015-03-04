@@ -14,6 +14,7 @@
 		06B7C83F1AA777C700333AAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C83D1AA777C700333AAE /* LaunchScreen.xib */; };
 		06B7C84B1AA777C700333AAE /* iBeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C84A1AA777C700333AAE /* iBeaconDemoTests.m */; };
 		06B7C8591AA7781C00333AAE /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C8581AA7781C00333AAE /* BeaconViewController.m */; };
+		06B7C85E1AA7823400333AAE /* ReceiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C85D1AA7823400333AAE /* ReceiverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		06B7C8571AA7781C00333AAE /* BeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
 		06B7C8581AA7781C00333AAE /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
 		06B7C85B1AA77EEA00333AAE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		06B7C85C1AA7823400333AAE /* ReceiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiverViewController.h; sourceTree = "<group>"; };
+		06B7C85D1AA7823400333AAE /* ReceiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				06B7C8571AA7781C00333AAE /* BeaconViewController.h */,
 				06B7C8581AA7781C00333AAE /* BeaconViewController.m */,
 				06B7C85B1AA77EEA00333AAE /* Constants.h */,
+				06B7C85C1AA7823400333AAE /* ReceiverViewController.h */,
+				06B7C85D1AA7823400333AAE /* ReceiverViewController.m */,
 			);
 			path = iBeaconDemo;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				06B7C8311AA777C700333AAE /* AppDelegate.m in Sources */,
 				06B7C82E1AA777C700333AAE /* main.m in Sources */,
 				06B7C8591AA7781C00333AAE /* BeaconViewController.m in Sources */,
+				06B7C85E1AA7823400333AAE /* ReceiverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +354,7 @@
 				INFOPLIST_FILE = iBeaconDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -358,6 +365,7 @@
 				INFOPLIST_FILE = iBeaconDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
