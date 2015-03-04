@@ -60,12 +60,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UUID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWp-Gd-kQi">
-                                <rect key="frame" x="279" y="250" width="42" height="21"/>
+                                <rect key="frame" x="281.5" y="250" width="37" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Ih5-RT-9eb"/>
                                     <constraint firstAttribute="width" constant="42" id="SKP-Rp-Kfc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -76,7 +76,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Major" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp9-mE-eBh">
-                                <rect key="frame" x="226" y="280" width="44" height="21"/>
+                                <rect key="frame" x="226" y="280" width="44" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="HoN-mB-gO2"/>
                                     <constraint firstAttribute="width" constant="44" id="m99-yN-SuI"/>
@@ -92,7 +92,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7p-fX-gzZ">
-                                <rect key="frame" x="330" y="280" width="44" height="21"/>
+                                <rect key="frame" x="330" y="280" width="44" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="LlR-N7-GeP"/>
                                     <constraint firstAttribute="height" constant="21" id="ZUy-lC-TrO"/>
@@ -108,7 +108,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App bundle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEe-nP-L4o">
-                                <rect key="frame" x="256" y="322" width="89" height="21"/>
+                                <rect key="frame" x="256" y="321" width="89" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ZYH-SG-ChU"/>
                                     <constraint firstAttribute="height" constant="21" id="g7F-pH-ihJ"/>
