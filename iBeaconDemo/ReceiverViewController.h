@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
-@import CoreLocation;
+#import "MABeaconReceiver.h"
 
-@interface ReceiverViewController : UIViewController
-
-@property (strong, nonatomic) CLBeaconRegion *beaconRegion;
-@property (strong, nonatomic) CLLocationManager *locationManager;
+@interface ReceiverViewController : UIViewController<MABeaconReceiverDelegate>
 
 @end

@@ -8,7 +8,7 @@
 
 #import "ReceiverViewController.h"
 
-@interface ReceiverViewController ()<CLLocationManagerDelegate>
+@interface ReceiverViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *beaconFoundLabel;
 @property (weak, nonatomic) IBOutlet UILabel *proximityUUIDLabel;
@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *accuracyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rssiLabel;
 
+@property (strong, nonatomic) MABeaconReceiver *beaconReceiver;
 @end
 
 @implementation ReceiverViewController
@@ -25,38 +26,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.locationManager = [[CLLocationManager alloc] init];
-    [self.locationManager requestAlwaysAuthorization];
-    self.locationManager.delegate = self;
-    [self setupRegion];
-    [self locationManager:self.locationManager didStartMonitoringForRegion:self.beaconRegion];
+    self.beaconReceiver = [[MABeaconReceiver alloc] initWithUUID:kUUID bundleID:kBundleID];
+    self.beaconReceiver.delegate = self;
 }
 
-- (void)setupRegion {
-    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:kUUID];
-    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:kBundleID];
-    [self.locationManager startMonitoringForRegion:self.beaconRegion];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
-    [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
-    NSLog(@"Beacon Found");
-    [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
-}
-
--(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
-    NSLog(@"Left Region");
-    self.distanceLabel.text = @"Left region";
-//        [self.locationManager stopRangingBeaconsInRegion:self.beaconRegion];
-    self.beaconFoundLabel.text = @"No";
-}
-
--(void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
-    CLBeacon *beacon = [[CLBeacon alloc] init];
-    beacon = [beacons lastObject];
+-(void)foundBacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
+    
+    CLBeacon *beacon = [beacons lastObject];
     
     self.beaconFoundLabel.text = @"Yes";
     self.proximityUUIDLabel.text = beacon.proximityUUID.UUIDString;
@@ -78,6 +54,5 @@
     }
     self.rssiLabel.text = [NSString stringWithFormat:@"%i", beacon.rssi];
 }
-
 
 @end

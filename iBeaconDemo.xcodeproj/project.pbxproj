@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065186541AA869E90033C98D /* MABeaconReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 065186531AA869E90033C98D /* MABeaconReceiver.m */; };
 		06B7C82E1AA777C700333AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C82D1AA777C700333AAE /* main.m */; };
 		06B7C8311AA777C700333AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C8301AA777C700333AAE /* AppDelegate.m */; };
 		06B7C83A1AA777C700333AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C8381AA777C700333AAE /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065186521AA869E90033C98D /* MABeaconReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABeaconReceiver.h; sourceTree = "<group>"; };
+		065186531AA869E90033C98D /* MABeaconReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABeaconReceiver.m; sourceTree = "<group>"; };
 		06B7C8281AA777C700333AAE /* iBeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B7C82C1AA777C700333AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06B7C82D1AA777C700333AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 				06B7C85B1AA77EEA00333AAE /* Constants.h */,
 				06B7C85C1AA7823400333AAE /* ReceiverViewController.h */,
 				06B7C85D1AA7823400333AAE /* ReceiverViewController.m */,
+				065186521AA869E90033C98D /* MABeaconReceiver.h */,
+				065186531AA869E90033C98D /* MABeaconReceiver.m */,
 			);
 			path = iBeaconDemo;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				06B7C8311AA777C700333AAE /* AppDelegate.m in Sources */,
 				06B7C82E1AA777C700333AAE /* main.m in Sources */,
 				06B7C8591AA7781C00333AAE /* BeaconViewController.m in Sources */,
+				065186541AA869E90033C98D /* MABeaconReceiver.m in Sources */,
 				06B7C85E1AA7823400333AAE /* ReceiverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +428,7 @@
 				06B7C8501AA777C700333AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06B7C8511AA777C700333AAE /* Build configuration list for PBXNativeTarget "iBeaconDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				06B7C8531AA777C700333AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
