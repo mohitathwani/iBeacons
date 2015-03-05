@@ -32,7 +32,11 @@
 
 -(void)foundBacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
     
-    CLBeacon *beacon = [beacons lastObject];
+    NSSortDescriptor *nearestSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"rssi" ascending:YES];
+    
+    NSArray *sortedBeacons = [beacons sortedArrayUsingDescriptors:@[nearestSortDescriptor]];
+    
+    CLBeacon *beacon = [sortedBeacons lastObject];
     
     self.beaconFoundLabel.text = @"Yes";
     self.proximityUUIDLabel.text = beacon.proximityUUID.UUIDString;

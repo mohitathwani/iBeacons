@@ -12,6 +12,6 @@
 #define kUUID @"23542266-18D1-4FE4-B4A1-23F8195B9D39"
 #define kBundleID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
 #define kMajor 1
-#define kMinor 1
+#define kMinor 2
 
 #endif
