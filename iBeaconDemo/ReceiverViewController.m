@@ -52,7 +52,7 @@
         self.distanceLabel.text = @"Far";
         self.view.backgroundColor = [UIColor redColor];
     }
-    self.rssiLabel.text = [NSString stringWithFormat:@"%i", beacon.rssi];
+    self.rssiLabel.text = [NSString stringWithFormat:@"%li", (long)beacon.rssi];
 }
 
 @end
